@@ -6,6 +6,6 @@ RUN curl -L https://github.com/specdown/specdown/releases/download/$VERSION/spec
 
 FROM ubuntu
 
-COPY --from=download /specdown /usr/bin/specdown
+COPY --from=downloader /specdown /usr/bin/specdown
 
 RUN chmod +x /usr/bin/specdown
