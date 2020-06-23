@@ -12,4 +12,4 @@ FROM ubuntu
 
 COPY --from=downloader /specdown /usr/bin/specdown
 
-RUN chmod +x /usr/bin/specdown && specdown
+RUN chmod +x /usr/bin/specdown && specdown --help
